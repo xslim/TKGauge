@@ -5,7 +5,7 @@
 //  Created by Taras Kalapun on 6/18/12.
 //
 
-
+#import <QuartzCore/QuartzCore.h>
 #import "TKGaugeViewController.h"
 #import "TKSimpleDataFilter.h"
 #import "TKGaugeView.h"
@@ -18,7 +18,6 @@
 @property (nonatomic) SystemSoundID	soundFileObject;
 #endif
 
-@property (nonatomic, assign, readwrite) NSUInteger adcPort;
 @property (nonatomic, readwrite, assign) BOOL isFramePreset;
 
 - (void)loadGaugeView;
@@ -31,7 +30,7 @@
 @synthesize gaugeView;
 @synthesize uuid, mainConfig, skinConfig, dataFilter, gaugePath, skinPath, conversion;
 @synthesize isFramePreset;
-@synthesize allowDrag, allowResizeOnPinch, warnOnDoubleTap;
+@synthesize allowDrag, allowResizeOnPinch, warnOnDoubleTap, savePositionAndSize;
 
 #ifdef __AudioToolbox_H
 @synthesize soundFileObject = soundFileObject_;

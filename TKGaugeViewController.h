@@ -36,7 +36,6 @@
 @property (nonatomic, retain) NSDictionary *mainConfig;
 @property (nonatomic, retain) NSDictionary *skinConfig;
 @property (nonatomic, retain) TKSimpleDataFilter *dataFilter;
-@property (nonatomic, readonly) NSUInteger adcPort;
 @property (nonatomic, readonly) BOOL isFramePreset;
 
 @property (nonatomic, assign) BOOL allowDrag;
