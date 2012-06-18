@@ -6,6 +6,7 @@
 //
 
 #import "TKGaugeView.h"
+#import <QuartzCore/QuartzCore.h>
 
 #define DEGTORAD(x) ((x)*(M_PI/180.0))
 
