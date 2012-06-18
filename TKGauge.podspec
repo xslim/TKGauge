@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
   }
   s.source   = { :git => 'git://github.com/xslim/TKGauge.git' }
   s.source_files = 'TK*.{h,m}'
+  s.frameworks   = 'QuartzCore'
   s.requires_arc = true
 end
