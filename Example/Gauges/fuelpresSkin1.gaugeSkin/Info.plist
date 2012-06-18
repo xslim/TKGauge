@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>skin</key>
+	<dict>
+		<key>arrowAngleMax</key>
+		<integer>270</integer>
+		<key>arrowAngleMin</key>
+		<integer>0</integer>
+		<key>arrowAxis</key>
+		<string>{62, 114}</string>
+		<key>arrowSize</key>
+		<string>{130, 342}</string>
+		<key>bgAxis</key>
+		<string>{250, 250}</string>
+		<key>bgSize</key>
+		<string>{500, 500}</string>
+		<key>capSize</key>
+		<string>{52, 52}</string>
+		<key>digitalLabelColor</key>
+		<string>{255, 0, 0}</string>
+		<key>digitalLabelFrame</key>
+		<string>{{250, 300},{300, 30}}</string>
+		<key>name</key>
+		<string>First Fuel Pressure Skin</string>
+		<key>warnPosition</key>
+		<string>{300, 300}</string>
+		<key>warnSize</key>
+		<string>{45, 45}</string>
+	</dict>
+	<key>uuid</key>
+	<string>25798600-638b-11e0-ae3e-0800200c9a66</string>
+</dict>
+</plist>

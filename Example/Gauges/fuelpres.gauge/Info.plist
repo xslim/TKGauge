@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>config</key>
+	<dict>
+		<key>showDigitalLabel</key>
+		<string>NO</string>
+		<key>averageFilter</key>
+		<integer>5</integer>
+		<key>conversion</key>
+		<string>10/255 * %d</string>
+		<key>scaleMax</key>
+		<integer>9</integer>
+		<key>scaleMin</key>
+		<integer>0</integer>
+		<key>warnHigh</key>
+		<real>5</real>
+		<key>warnLow</key>
+		<integer>2</integer>
+		<key>warnSound</key>
+		<true/>
+	</dict>
+	<key>info</key>
+	<dict>
+		<key>description</key>
+		<string>Provides fuel pressure value</string>
+		<key>name</key>
+		<string>FuelPres Gauge</string>
+		<key>version</key>
+		<string>0.1</string>
+	</dict>
+	<key>skin</key>
+	<dict>
+		<key>digitalLabelColor</key>
+		<string>{255, 0, 0}</string>
+		<key>digitalLabelFrame</key>
+		<string>{{250, 300},{300, 30}}</string>
+		<key>arrowAngleMax</key>
+		<integer>270</integer>
+		<key>arrowAngleMin</key>
+		<integer>0</integer>
+		<key>arrowAxis</key>
+		<string>{62, 114}</string>
+		<key>arrowSize</key>
+		<string>{130, 342}</string>
+		<key>bgAxis</key>
+		<string>{250, 250}</string>
+		<key>bgSize</key>
+		<string>{500, 500}</string>
+		<key>capSize</key>
+		<string>{52, 52}</string>
+		<key>warnPosition</key>
+		<string>{300, 300}</string>
+		<key>warnSize</key>
+		<string>{45, 45}</string>
+	</dict>
+	<key>uuid</key>
+	<string>25798600-638b-11e0-ae3e-0800200c9a66</string>
+</dict>
+</plist>
