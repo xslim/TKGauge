@@ -16,7 +16,7 @@
 
 @interface FlipsideViewController : UIViewController
 
-@property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (assign, nonatomic) id <FlipsideViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
 

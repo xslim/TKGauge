@@ -17,6 +17,11 @@
 		55158D2E158FCBED00E96159 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55158D2D158FCBED00E96159 /* FlipsideViewController.m */; };
 		55158D31158FCBED00E96159 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55158D2F158FCBED00E96159 /* MainViewController.xib */; };
 		55158D34158FCBED00E96159 /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55158D32158FCBED00E96159 /* FlipsideViewController.xib */; };
+		5548299E158FD35A008D355F /* Gauges in Resources */ = {isa = PBXBuildFile; fileRef = 5548299D158FD35A008D355F /* Gauges */; };
+		554829A2158FD5B2008D355F /* TKGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 554829A1158FD5B2008D355F /* TKGaugeView.m */; };
+		554829B0158FD9EB008D355F /* TKGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554829AF158FD9EB008D355F /* TKGaugeViewController.m */; };
+		554829B3158FDA91008D355F /* TKSimpleDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 554829B2158FDA91008D355F /* TKSimpleDataFilter.m */; };
+		554829B5158FE534008D355F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554829B4158FE534008D355F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,14 @@
 		55158D2D158FCBED00E96159 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		55158D30158FCBED00E96159 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainViewController.xib; sourceTree = "<group>"; };
 		55158D33158FCBED00E96159 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FlipsideViewController.xib; sourceTree = "<group>"; };
+		5548299D158FD35A008D355F /* Gauges */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gauges; sourceTree = "<group>"; };
+		554829A0158FD5B2008D355F /* TKGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKGaugeView.h; path = ../TKGaugeView.h; sourceTree = "<group>"; };
+		554829A1158FD5B2008D355F /* TKGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKGaugeView.m; path = ../TKGaugeView.m; sourceTree = "<group>"; };
+		554829AE158FD9EB008D355F /* TKGaugeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKGaugeViewController.h; path = ../TKGaugeViewController.h; sourceTree = "<group>"; };
+		554829AF158FD9EB008D355F /* TKGaugeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKGaugeViewController.m; path = ../TKGaugeViewController.m; sourceTree = "<group>"; };
+		554829B1158FDA91008D355F /* TKSimpleDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKSimpleDataFilter.h; path = ../TKSimpleDataFilter.h; sourceTree = "<group>"; };
+		554829B2158FDA91008D355F /* TKSimpleDataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKSimpleDataFilter.m; path = ../TKSimpleDataFilter.m; sourceTree = "<group>"; };
+		554829B4158FE534008D355F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554829B5158FE534008D355F /* QuartzCore.framework in Frameworks */,
 				55158D18158FCBED00E96159 /* UIKit.framework in Frameworks */,
 				55158D1A158FCBED00E96159 /* Foundation.framework in Frameworks */,
 				55158D1C158FCBED00E96159 /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +69,8 @@
 		55158D08158FCBED00E96159 = {
 			isa = PBXGroup;
 			children = (
+				5548299F158FD590008D355F /* TKGauge */,
+				5548299D158FD35A008D355F /* Gauges */,
 				55158D1D158FCBED00E96159 /* SpeedGauge */,
 				55158D16158FCBED00E96159 /* Frameworks */,
 				55158D14158FCBED00E96159 /* Products */,
@@ -72,6 +88,7 @@
 		55158D16158FCBED00E96159 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				554829B4158FE534008D355F /* QuartzCore.framework */,
 				55158D17158FCBED00E96159 /* UIKit.framework */,
 				55158D19158FCBED00E96159 /* Foundation.framework */,
 				55158D1B158FCBED00E96159 /* CoreGraphics.framework */,
@@ -104,6 +121,19 @@
 				55158D25158FCBED00E96159 /* SpeedGauge-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5548299F158FD590008D355F /* TKGauge */ = {
+			isa = PBXGroup;
+			children = (
+				554829B1158FDA91008D355F /* TKSimpleDataFilter.h */,
+				554829B2158FDA91008D355F /* TKSimpleDataFilter.m */,
+				554829A0158FD5B2008D355F /* TKGaugeView.h */,
+				554829A1158FD5B2008D355F /* TKGaugeView.m */,
+				554829AE158FD9EB008D355F /* TKGaugeViewController.h */,
+				554829AF158FD9EB008D355F /* TKGaugeViewController.m */,
+			);
+			name = TKGauge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +190,7 @@
 				55158D22158FCBED00E96159 /* InfoPlist.strings in Resources */,
 				55158D31158FCBED00E96159 /* MainViewController.xib in Resources */,
 				55158D34158FCBED00E96159 /* FlipsideViewController.xib in Resources */,
+				5548299E158FD35A008D355F /* Gauges in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +205,9 @@
 				55158D28158FCBED00E96159 /* AppDelegate.m in Sources */,
 				55158D2B158FCBED00E96159 /* MainViewController.m in Sources */,
 				55158D2E158FCBED00E96159 /* FlipsideViewController.m in Sources */,
+				554829A2158FD5B2008D355F /* TKGaugeView.m in Sources */,
+				554829B0158FD9EB008D355F /* TKGaugeViewController.m in Sources */,
+				554829B3158FDA91008D355F /* TKSimpleDataFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +292,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedGauge/SpeedGauge-Prefix.pch";
 				INFOPLIST_FILE = "SpeedGauge/SpeedGauge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +304,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedGauge/SpeedGauge-Prefix.pch";
 				INFOPLIST_FILE = "SpeedGauge/SpeedGauge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +329,7 @@
 				55158D39158FCBED00E96159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

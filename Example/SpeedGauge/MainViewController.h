@@ -7,9 +7,11 @@
 //
 
 #import "FlipsideViewController.h"
+#import "TKGaugeViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MainViewController : TKGaugeViewController <FlipsideViewControllerDelegate>
 
 - (IBAction)showInfo:(id)sender;
+- (IBAction)toggleRandomTimer:(id)sender;
 
 @end

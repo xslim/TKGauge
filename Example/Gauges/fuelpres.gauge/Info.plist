@@ -33,7 +33,7 @@
 	<key>skin</key>
 	<dict>
 		<key>digitalLabelColor</key>
-		<string>{255, 0, 0}</string>
+		<string>ff0000</string>
 		<key>digitalLabelFrame</key>
 		<string>{{250, 300},{300, 30}}</string>
 		<key>arrowAngleMax</key>
