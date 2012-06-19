@@ -18,5 +18,17 @@ dependency 'TKGauge', :podspec => 'https://raw.github.com/xslim/TKGauge/master/T
 
 ![1](https://github.com/xslim/TKGauge/raw/master/screenshots/1.png)
 
+### Loading Gauge
+
+```obj-c
+NSString *path = [[NSBundle mainBundle] bundlePath];
+self.gaugePath = [[path stringByAppendingPathComponent:@"Gauges"] stringByAppendingPathComponent:@"speed.gauge"];
+```
+
+### Data filter
+
+* By default, data filter `maxAverageCount` will be loaded from skin's config `config.averageFilter` - TODO
+* To turn off data filter just say `self.dataFilter.maxAverageCount = 0;` (Ex. some where in `viewDidLoad`)
+
 ## Theaming
 * See Gauges folder
