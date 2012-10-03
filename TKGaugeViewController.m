@@ -121,7 +121,7 @@
 		TKGaugeView *v = self.gaugeView;
 		v.digitalLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDigitalLabel"] boolValue];
         
-        v.dimentionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimentionLabel"] boolValue];
+        v.dimensionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimensionLabel"] boolValue];
         
 		if (newSkinLoaded) {
 			v.skinPath = self.skinPath;
@@ -172,8 +172,8 @@
     
 	TKGaugeView *v = self.gaugeView;
 	v.digitalLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDigitalLabel"] boolValue];
-    v.dimentionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimentionLabel"] boolValue];
-    v.dimentionLabel.text = @"km/h";
+    v.dimensionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimensionLabel"] boolValue];
+    v.dimensionLabel.text = @"km/h";
     
 	viewLoaded = YES;
     
