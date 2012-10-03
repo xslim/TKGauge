@@ -173,7 +173,6 @@
 	TKGaugeView *v = self.gaugeView;
 	v.digitalLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDigitalLabel"] boolValue];
     v.dimensionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimensionLabel"] boolValue];
-    v.dimensionLabel.text = @"km/h";
     
 	viewLoaded = YES;
     
