@@ -4,6 +4,10 @@
 <dict>
 	<key>skin</key>
 	<dict>
+		<key>dimensionLabelColor</key>
+		<string>ff0000</string>
+		<key>dimensionLabelFrame</key>
+		<string>{{250, 320},{300, 30}}</string>
 		<key>arrowAngleMax</key>
 		<integer>270</integer>
 		<key>arrowAngleMin</key>

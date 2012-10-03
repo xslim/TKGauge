@@ -4,6 +4,8 @@
 <dict>
 	<key>config</key>
 	<dict>
+		<key>showDimensionLabel</key>
+		<string>NO</string>
 		<key>showDigitalLabel</key>
 		<string>NO</string>
 		<key>averageFilter</key>
@@ -32,6 +34,10 @@
 	</dict>
 	<key>skin</key>
 	<dict>
+		<key>dimensionLabelColor</key>
+		<string>ff0000</string>
+		<key>dimensionLabelFrame</key>
+		<string>{{250, 320},{300, 30}}</string>
 		<key>digitalLabelColor</key>
 		<string>ff0000</string>
 		<key>digitalLabelFrame</key>
