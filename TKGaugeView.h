@@ -20,6 +20,7 @@
 @property (nonatomic, retain) UIImageView *warn;
 
 @property (nonatomic, retain) UILabel *digitalLabel;
+@property (nonatomic, retain) UILabel *dimentionLabel;
 
 - (void)reloadImages;
 - (void)disableLayout;

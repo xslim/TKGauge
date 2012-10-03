@@ -17,7 +17,7 @@
 
 @implementation TKGaugeView
 
-@synthesize skin, skinPath, bg, arrow, cap, warn, digitalLabel;
+@synthesize skin, skinPath, bg, arrow, cap, warn, digitalLabel, dimentionLabel;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -48,11 +48,19 @@
         self.digitalLabel.textColor = [UIColor redColor];
         self.digitalLabel.textAlignment = UITextAlignmentLeft;
         
+        CGRect dimentionLabelFrame = CGRectZero;
+        self.dimentionLabel = [[UILabel alloc] initWithFrame:dimentionLabelFrame];
+        self.dimentionLabel.font = [UIFont boldSystemFontOfSize:20];
+        self.dimentionLabel.backgroundColor = [UIColor clearColor];
+        self.dimentionLabel.textColor = [UIColor redColor];
+        self.dimentionLabel.textAlignment = UITextAlignmentLeft;
+        
         [self addSubview:self.bg];
         [self addSubview:self.warn];
         [self addSubview:self.arrow];
         [self addSubview:self.cap];
         [self addSubview:self.digitalLabel];
+        [self addSubview:self.dimentionLabel];
         
         
         [self reloadImages];
@@ -176,6 +184,12 @@
     digitalLabelFrame.size.width = digitalLabelFrame.size.width /aspect;
     digitalLabelFrame.size.height = digitalLabelFrame.size.height /aspect;
     
+    CGRect dimentionLabelFrame = CGRectFromString([self.skin objectForKey:@"dimentionLabelFrame"]);
+    dimentionLabelFrame.origin.x = dimentionLabelFrame.origin.x /aspect;
+    dimentionLabelFrame.origin.y = dimentionLabelFrame.origin.y /aspect;
+    dimentionLabelFrame.size.width = dimentionLabelFrame.size.width /aspect;
+    dimentionLabelFrame.size.height = dimentionLabelFrame.size.height /aspect;
+    
     NSString *dlColor = nil;
     dlColor = [self.skin objectForKey:@"digitalLabelColor"];
     if (dlColor) {
@@ -184,7 +198,7 @@
     }
     
     self.digitalLabel.frame = digitalLabelFrame;
-    
+    self.dimentionLabel.frame = dimentionLabelFrame;
 }
 
 #pragma mark - Helpers
