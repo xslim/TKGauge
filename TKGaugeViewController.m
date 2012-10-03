@@ -121,6 +121,8 @@
 		TKGaugeView *v = self.gaugeView;
 		v.digitalLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDigitalLabel"] boolValue];
         
+        v.dimensionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimensionLabel"] boolValue];
+        
 		if (newSkinLoaded) {
 			v.skinPath = self.skinPath;
 			v.skin     = self.skinConfig;
@@ -170,6 +172,7 @@
     
 	TKGaugeView *v = self.gaugeView;
 	v.digitalLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDigitalLabel"] boolValue];
+    v.dimensionLabel.hidden = ![[self.mainConfig valueForKeyPath:@"config.showDimensionLabel"] boolValue];
     
 	viewLoaded = YES;
     
