@@ -197,6 +197,13 @@
         if (c) self.digitalLabel.textColor = c;
     }
     
+    NSString *dimColor = nil;
+    dimColor = [self.skin objectForKey:@"dimensionLabelColor"];
+    if (dimColor) {
+        UIColor *c = [self colorFromHexString:dimColor];
+        if (c) self.dimensionLabel.textColor = c;
+    }
+    
     self.digitalLabel.frame = digitalLabelFrame;
     self.dimensionLabel.frame = dimensionLabelFrame;
 }
